@@ -1,0 +1,352 @@
+body{
+    font-family: "Poppins", serif;
+    font-style: normal;
+    padding: 6%;
+}
+
+.pageOne {
+    background: url('canva-samp-and-beef-sifo.jpg') no-repeat;
+    background-size: cover;
+    height: 70vh;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    /* Aligns children vertically */
+    justify-content: center;
+    /* Centers content vertically */
+    align-items: center;
+    /* Centers content horizontally */
+    padding: 20px;
+}
+
+#title {
+    font-weight: 900;
+    font-size: 60px;
+    font-weight: bolder;
+    margin: 10px 0;
+    /* Adds space around the title */
+}
+
+#subtitle {
+    position: relative;
+    top: -90px;
+    font-size: 24px;
+    font-weight: lighter;
+    margin: 30x 0;
+    /* Adds space around the subtitle */
+}
+
+#dineBtn {
+    background-color: white;
+    color: black;
+    /* Adjust color as needed */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+#dineBtn:hover {
+    background-color: #d48b18;
+    /* Adjust hover color */
+}
+
+.pageTwo {
+    display: flex;
+    align-items: center;
+    /* Vertically centers the content */
+    justify-content: space-between;
+    /* Ensures space between the image and the content */
+    padding: 20px;
+    /* Adds some padding around the content */
+}
+
+.aboutImg {
+    flex: 1;
+    /* Ensures the image takes up equal space */
+    padding-right: 20px;
+    /* Adds space between the image and the content */
+}
+
+#pageTwoImg {
+    width: 100%;
+    /* Makes the image responsive */
+    max-width: 400px;
+    /* You can adjust this value based on your preferred image size */
+    height: auto;
+}
+
+#aboutContent {
+    flex: 2;
+    /* Allows the content to take up more space than the image */
+    padding-left: 20px;
+    /* Adds some space between the content and the image */
+    max-width: 600px;
+    /* You can adjust this value to control the content width */
+}
+
+#aboutContent h2 {
+    font-size: 2rem;
+    /* Adjust font size as needed */
+    margin-bottom: 10px;
+    /* Adds space below the heading */
+}
+
+#aboutContent p {
+    font-size: 1rem;
+    /* Adjust font size for paragraph */
+    line-height: 1.6;
+    /* Increases line height for readability */
+}
+
+.pageThree {
+    padding: 20px;
+    background-color: #f9f9f9;
+    /* Light background color for contrast */
+    color: #333;
+    /* Dark text for readability */
+    text-align: center;
+    /* Centers the text */
+    max-width: 800px;
+    /* Limits the width for better readability */
+    margin: 20px auto;
+    /* Centers the page and adds margin */
+    border-radius: 8px;
+    /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Adds a subtle shadow */
+}
+
+.pageThree h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    /* Adds space below the heading */
+    color: #333;
+    /* Ensures the heading is dark enough */
+}
+
+.pageThree p {
+    font-size: 18px;
+    line-height: 1.6;
+    /* Increases line height for readability */
+    margin-bottom: 20px;
+    /* Adds space after the paragraph */
+}
+
+.pageThree br {
+    margin-bottom: 20px;
+    /* Adds spacing after the line break */
+}
+
+h1{
+text-align: center;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.details,
+.icons,
+.labels {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.details div,
+.icons div,
+.labels div {
+    width: 23%;
+    margin-right: 10px;
+}
+
+.ingredients {
+    list-style-type: square;
+    font-size: 25px;
+    margin-left: 50px;
+    padding-left: 50px;
+    line-height: 1.5;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.ingredients-list {
+    padding-left: 50px;
+    margin-left: 50px;
+    ;
+    list-style: none;
+    text-align: left;
+}
+
+.ingredients-list li {
+    font-size: 25px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.ingredients-list input[type="checkbox"] {
+    width: 1.5rem;
+    height: 1.5rem;
+    accent-color: black;
+    cursor: pointer;
+}
+
+.ingredients-list input[type="checkbox"]:checked+label {
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+
+.row {
+    display: flex;
+    align-items: start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.col-6 {
+    flex: 1;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+#method {
+    text-align: center;
+    padding: 20px 0;
+    margin: 0;
+}
+
+#samp,
+#beef-stew {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.collapsible {
+    cursor: pointer;
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+    border: none;
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.collapsible:after {
+    content: ' ▼';
+}
+
+/*for the content that is initially hidden*/
+.content {
+    font-family: "Monteserrat", serif;
+    display: none;
+    padding: 0 10px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.collapsible.active:after {
+    content: ' ▲';
+}
+
+.rating-container {
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 400px;
+    background: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.rating-container h3 {
+    font-size: 1.7rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.stars {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.star {
+    font-size: 2rem;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.star:hover {
+    color: #ffcc00;
+    transform: scale(1.2);
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.feedback {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    color: #666
+}
+
+#commentForm {
+    padding: 50px;
+    margin: 30px;
+}
+
+#comment {
+    width: 100%;
+    padding: 50px;
+}
+
+#submitBtn {
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+}
+
+footer {
+    font-family: "Monteserrat", serif;
+    position: fixed;
+    bottom: 0;
+    /* This sets the footer's position to the bottom of the viewport. The 
+    0 value means the footer will be flush with the bottom edge of the screen. */
+    left: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+    color: #333;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid black;
+    z-index: 1000;
+    /* Ensures it stays on top of other content */
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
