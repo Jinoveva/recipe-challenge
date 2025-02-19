@@ -339,6 +339,14 @@ footer {
     /* Ensures it stays on top of other content */
 }
 
+.icon-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 30px;
+    gap: 10px;
+}
+
 @keyframes slideIn {
     0% {
         opacity: 0;
